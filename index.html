@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>مارکت هرات</title>
+
+<meta name="theme-color" content="#ffffff">
+
+<link rel="manifest" href="manifest.json">
+
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+<h1>🛒 مارکت هرات</h1>
+
+<!-- ورود و ثبت نام -->
+
+<div id="loginBox">
+
+<h2>ورود / ثبت نام</h2>
+
+<input
+id="email"
+type="email"
+placeholder="ایمیل">
+
+<input
+id="password"
+type="password"
+placeholder="رمز عبور">
+
+<button id="registerBtn">
+ثبت نام
+</button>
+
+<button id="loginBtn">
+ورود
+</button>
+
+</div>
+
+<!-- صفحه اصلی -->
+
+<div id="homeBox" style="display:none;">
+
+<h2 id="welcome"></h2>
+
+<button id="logoutBtn">
+خروج از حساب
+</button>
+
+<hr>
+
+<h2>ثبت آگهی</h2>
+
+<select id="city">
+
+<option value="هرات">🏙️ هرات</option>
+<option value="کابل">🏙️ کابل</option>
+<option value="قندهار">🏙️ قندهار</option>
+<option value="مزار شریف">🏙️ مزار شریف</option>
+<option value="جلال‌آباد">🏙️ جلال‌آباد</option>
+<option value="غزنی">🏙️ غزنی</option>
+<option value="کندز">🏙️ کندز</option>
+<option value="بامیان">🏙️ بامیان</option>
+
+</select>
+
+<select id="category">
+
+<option value="موبایل">📱 موبایل</option>
+<option value="کامپیوتر">💻 کامپیوتر</option>
+<option value="خودرو">🚗 خودرو</option>
+<option value="خانه و ملک">🏠 خانه و ملک</option>
+<option value="لوازم خانگی">🛋️ لوازم خانگی</option>
+<option value="پوشاک">👕 پوشاک</option>
+<option value="حیوانات">🐄 حیوانات</option>
+<option value="کتاب">📚 کتاب</option>
+<option value="ابزار">🔧 ابزار</option>
+<option value="سایر">📦 سایر</option>
+
+</select>
+
+<input
+id="productName"
+type="text"
+placeholder="نام کالا">
+
+<input
+id="productPrice"
+type="number"
+placeholder="قیمت (افغانی)">
+
+<input
+id="phone"
+type="tel"
+placeholder="شماره تماس">
+
+<textarea
+id="description"
+placeholder="توضیحات کالا"></textarea>
+
+<button id="addProductBtn">
+ثبت آگهی
+</button>
+
+<hr>
+
+<h2>جستجو</h2>
+
+<input
+id="searchBox"
+type="text"
+placeholder="🔍 نام کالا را جستجو کنید">
+
+<select id="cityFilter">
+
+<option value="">🌍 همه شهرها</option>
+<option value="هرات">هرات</option>
+<option value="کابل">کابل</option>
+<option value="قندهار">قندهار</option>
+<option value="مزار شریف">مزار شریف</option>
+<option value="جلال‌آباد">جلال‌آباد</option>
+<option value="غزنی">غزنی</option>
+<option value="کندز">کندز</option>
+<option value="بامیان">بامیان</option>
+
+</select>
+
+<hr>
+
+<h2>⭐ آگهی‌های ویژه</h2>
+
+<div id="featuredContent"></div>
+
+<hr>
+
+<h2>📋 همه آگهی‌ها</h2>
+
+<div id="content"></div>
+
+</div>
+
+</div>
+
+<script>
+if("serviceWorker" in navigator){
+window.addEventListener("load",()=>{
+navigator.serviceWorker.register("./service-worker.js");
+});
+}
+</script>
+
+<script type="module" src="app.js"></script>
+
+</body>
+
+</html>

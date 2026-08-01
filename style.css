@@ -1,0 +1,132 @@
+body{
+margin:0;
+padding:20px;
+font-family:tahoma,sans-serif;
+background:#ffffff;
+color:#222;
+}
+
+.app{
+max-width:500px;
+margin:auto;
+background:#ffffff;
+padding:20px;
+border-radius:15px;
+box-shadow:0 3px 12px rgba(0,0,0,.08);
+}
+
+h1,h2{
+text-align:center;
+margin:12px 0;
+color:#222;
+}
+
+input,
+select,
+textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+box-sizing:border-box;
+border:1px solid #ddd;
+border-radius:10px;
+background:#fff;
+font-size:16px;
+font-family:tahoma,sans-serif;
+outline:none;
+transition:.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+border-color:#2196F3;
+box-shadow:0 0 5px rgba(33,150,243,.3);
+}
+
+textarea{
+min-height:120px;
+resize:vertical;
+}
+
+button{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:none;
+border-radius:10px;
+background:#fff;
+color:#222;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+box-shadow:0 3px 8px rgba(0,0,0,.15);
+transition:.3s;
+}
+
+button:hover{
+transform:translateY(-2px);
+}
+
+#addProductBtn{
+background:#2196F3;
+color:#fff;
+}
+
+#addProductBtn:hover{
+background:#1976D2;
+}
+
+.contactBtn{
+background:#4CAF50;
+color:#fff;
+}
+
+.deleteBtn{
+background:#F44336;
+color:#fff;
+}
+
+.editBtn{
+background:#FF9800;
+color:#fff;
+}
+
+.product{
+background:#fff;
+border:1px solid #e5e5e5;
+border-radius:12px;
+padding:15px;
+margin-top:15px;
+box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+.product h3{
+margin:0 0 10px;
+}
+
+.product p{
+margin:6px 0;
+}
+
+hr{
+border:none;
+border-top:1px solid #eee;
+margin:20px 0;
+}
+
+#content{
+margin-top:20px;
+}
+
+@media(max-width:500px){
+
+body{
+padding:10px;
+}
+
+.app{
+padding:15px;
+}
+
+}
